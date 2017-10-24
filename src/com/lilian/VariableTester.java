@@ -25,7 +25,16 @@ public class VariableTester {
     String s2 = "HAHAHAHAHAHA";
     int len = s.length();
     System.out.println("len:"+len);
-    System.out.println(s.charAt(0));	}
-
-
+    System.out.println(s.charAt(0));	
+     
+	int x = 5;
+	int y = 3;
+	float f =5.0f;
+    int z = x % y;
+    System.out.println(z);
+    System.out.println(x>>99);
+    System.out.println(x + 1);
+    x++;
+    
+	} 		
 }

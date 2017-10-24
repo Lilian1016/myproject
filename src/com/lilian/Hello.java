@@ -15,5 +15,6 @@ public class Hello {
 	      int age = Integer.parseInt(line);
 	      System.out.println(age);
 	      System.out.println(age > 25);
+          	
 	}
 }
