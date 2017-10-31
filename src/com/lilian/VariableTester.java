@@ -34,7 +34,7 @@ public class VariableTester {
     System.out.println(z);
     System.out.println(x>>99);
     System.out.println(x + 1);
-    x++;
     
-	} 		
+ 
+	}
 }
