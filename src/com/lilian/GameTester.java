@@ -5,26 +5,73 @@ import java.util.Scanner;
 public class GameTester {
 	public static void main(String[]args){
 		Scanner scanner =new Scanner(System.in);
+		int pos=0;
+		int row=3;
+		int col = 5;
+		int hp = 100;
 		int n= 3;
 	while(n!=0){
-		System.out.println("Ω–øÈ§J§Ë¶V: ");
+		System.out.println("Please enter a number: ");
 		String dir = scanner.nextLine();
 		n = Integer.parseInt(dir);
+		if (hp<0){
+			System.out.println("‰Ω†Ê≠ª‰∫Ü");
+			break;
+		}
+
 		switch(n){
 		case 4:
-			System.out.println("¶V•™");
+			System.out.println("ÂêëÂ∑¶");
+			if(pos%col!=0){
+				pos= pos-1;
+				hp=hp-5;
+			System.out.println("pos:"+pos);
+			System.out.println("HP:"+hp);
+			}else{
+				hp=hp-30;
+				System.out.println("HP:"+hp);
+			}
 			break;
+
 		case 8:
-			System.out.println("¶V§W");
+			System.out.println("Âêë‰∏ä");
+			if(pos/col>=row-2){
+				pos=pos-col;
+				hp=hp-5;
+				System.out.println("pos:"+pos);
+				System.out.println("HP:"+hp);
+			}else{
+				hp=hp-30;
+				System.out.println("HP:"+hp);
+			}
 			break;
 		case 2:
-			System.out.println("¶V§U");
-			break;
+			System.out.println("Âêë‰∏ã");
+			if(pos/col<row-1){
+				pos=pos+col;
+				hp=hp-5;
+				System.out.println("pos:"+pos);
+				System.out.println("HP:"+hp);
+			}else{
+				hp=hp-30;
+				System.out.println("HP:"+hp);
+			}
+				break;
+			
 		case 6:
-			System.out.println("¶V•k");
-		    break;
+			System.out.println("ÂêëÂè≥");
+			if(pos%col!=4){
+				pos=pos+1;
+				hp=hp-5;
+				System.out.println("pos:"+pos);
+				System.out.println("HP:"+hp);
+				}else{
+					hp=hp-30;
+					System.out.println("HP:"+hp);
+				}
+				break;
 		case 0:
-			System.out.println("µ≤ßÙ");
+			System.out.println("BYE");
 			break;
 		}
 	}
