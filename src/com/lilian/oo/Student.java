@@ -1,10 +1,11 @@
 package com.lilian.oo;
 
 public class Student {
-	int english;
-	int math;
+	 int english;
+	protected int math;
 	int chinese;
 	String name;
+	static int pass=60;
 	
 	public Student(){
 		
@@ -25,6 +26,6 @@ public class Student {
 	}
 
 	public int getAverage(){
-		return (english+math+chinese)/3;
+		return (english+math+chinese/3);
 	}
 }

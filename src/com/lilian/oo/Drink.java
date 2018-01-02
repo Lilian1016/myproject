@@ -10,7 +10,7 @@ public class Drink {
 			this.key=key;
 			this.price=price;
 			
-	}
+		}
 	public static void main(String[]args){
 		Scanner scanner =new Scanner(System.in);
 		int m=0;
@@ -30,6 +30,7 @@ public class Drink {
 		case 10:
 			 sum=sum+m;
 			break;
+			
 			
 		}
 		}
