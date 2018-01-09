@@ -1,10 +1,10 @@
 package com.lilian.sogo;
 
-public class GoldenCustomer extends Customer {
+public class GoldenCustomer extends SilverCustomer {
 	int returnMoney=(int)(amount*0.1);
     public GoldenCustomer(int amount){
     	super(amount);
-    	super.discount=0.1f;
+    
     }
     @Override
     public void print(){
