@@ -19,5 +19,5 @@ public class Poker2 {
 	  cards.remove(j);
   }
 }	
-	
+
 }
